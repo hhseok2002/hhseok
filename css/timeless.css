@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0; padding: 0; font-family: "adobe-myungjo-std", sans-serif; color: #333; box-sizing: border-box;}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*공통*/
+.big_inner_box{
+    margin: 0 auto;
+    width: 1500px;
+}
+.inner_box{
+    margin: 0 auto;
+    width: 1000px;;
+    margin-top: 20px;
+}
+.clear{
+    clear: both;
+}
+.name{
+    width: 100%;
+}
+.name h1{
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+/*공통 끝*/
+
+/*메인*/
+body{
+  background-color: black;
+}
+.master{
+  width: 100%;
+  height: 1030px;
+  background-image: url(../img/tm_main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+.text{
+  width: 50%;
+  top: 250px;
+  position: absolute;
+  left: 300px;
+}
+.tag-logo{
+  width: 12%;
+  float: left;
+}
+.logo-txt{
+  width: 85%;
+  float: right;
+  color: white;
+  font-size: 80px;
+  padding-top: 15px;
+}
+.copy{
+  width: 50%;
+  position: absolute;
+  top: 390px;
+  left: 430px;
+}
+.copy p{
+  color: #949494;
+  font-size: 50px;
+  line-height: 1.4;
+}
+.indent-text{
+  margin-left: 80px;
+  color: #949494;
+}
+.text2{
+  width: 7%;
+  padding: 10px 15px;
+  border: 1px solid;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 600px;
+  left: 550px;
+}
+/*네비게이션 바*/
+.sidebar{
+  width: 250px;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+.close-btn{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+}
+.close-btn li a{
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.brand{
+  width: 250px;
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.item{
+  width: 250px;
+  height: 54px;
+  text-align: center;
+  padding-top: 15px;
+}
+.close-btn li a:hover{
+  color: #f1f1f1;
+}
+.portfolio{
+  width: 250px;
+  height: 54px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.portfolio a:hover{
+  color: #00AAFF;
+}
+.area{
+  width: 250px;
+  height: 54px;
+  text-align: center;
+  padding-top: 20px;
+}
+.area a:hover{
+  color: #00AAFF;
+}
+
+.main-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hamburger-menu span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
