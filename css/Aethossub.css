@@ -1,0 +1,322 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR','맑은 고딕', sans-serif; color: #333; box-sizing: border-box;}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*공통*/
+.big_inner_box{
+    margin: 0 auto;
+    width: 1500px;
+}
+.inner_box{
+    margin: 0 auto;
+    width: 1000px;;
+    margin-top: 20px;
+}
+.clear{
+    clear: both;
+}
+.name{
+    width: 100%;
+    margin-bottom: 2%;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+/*공통 끝*/
+
+/*헤더*/
+.Top{
+    width: 100%;
+    height: 140px;
+    margin-top: 1%;
+}
+.main_nav{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+}
+.menu1{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu1 a:nth-child(5){
+    font-weight: 600;
+    color: blue;
+}
+.login{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login a{
+    margin-right: 5%;
+}
+.menu2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.menu2 a{
+    margin-right: 5%;
+}
+.menu2 a:first-child{
+    font-weight: 600;
+    color: blue;
+}
+/*헤더 끝*/
+
+/*메인*/
+.banner img{
+    width: 100%;
+    position: relative;
+    margin-bottom: 4%;
+}
+.banner_txt{
+    width: 45%;
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+}
+.banner_txt h2{
+    font-size: 40px;
+}
+.banner_txt p{
+    font-size: 20px;
+}
+/*메인 끝*/
+
+/*오픈형*/
+.open{
+    width: 100%;
+    height: 283px;
+    margin-bottom: 10%;
+}
+.open1{
+    width: 23%;
+    float: left;
+    height: 283px;
+    margin-right: 2%;
+}
+.open1:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.open2{
+    width: 23%;
+    float: left;
+    height: 283px;
+    margin-right: 2%;
+}
+.open2:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.open3{
+    width: 23%;
+    float: left;
+    height: 283px;
+    margin-right: 2%;
+}
+.open3:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.open4{
+    width: 25%;
+    float: left;
+    height: 283px;
+}
+.open4:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+/*오픈형 끝*/
+
+/*커널형*/
+.con{
+    width: 100%;
+    height: 283px;
+    margin-bottom: 10%;
+}
+.con1{
+    width: 23%;
+    height: 283px;
+    float: left;
+    margin-right: 2%;
+}
+.con1:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.con2{
+    width: 23%;
+    height: 283px;
+    float: left;
+    margin-right: 2%;
+}
+.con2:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.con3{
+    width: 23%;
+    height: 283px;
+    float: left;
+    margin-right: 2%;
+}
+.con3:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.con4{
+    width: 23%;
+    height: 283px;
+    float: right;
+}
+.con4:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+/*커널형 끝*/
+
+/*유선 이어폰*/
+.wired{
+    width: 100%;
+    height: 283px;
+    margin-bottom: 10%;
+}
+.wired1{
+    width: 23%;
+    height: 283px;
+    float: left;
+    margin-right: 2%;
+}
+.wired1:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.wired2{
+    width: 23%;
+    height: 283px;
+    float: left;
+    margin-right: 2%;
+}
+.wired2:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.wired3{
+    width: 23%;
+    height: 283px;
+    float: left;
+    margin-right: 2%;
+}
+.wired3:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.wired4{
+    width: 23%;
+    height: 283px;
+    float: right;
+}
+.wired4:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+/*유선 이어폰 끝*/
+
+/*푸터*/
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+.footer_nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid gray;
+}
+.footer_menu{
+    width: 74%;
+    float: left;
+    margin-top: 1.5%;
+}
+.footer_menu li{
+    float: left;
+    text-align: center;
+    margin-right: 6%;
+}
+.footer_menu:first-child{
+    margin-left: 10%;
+}
+.footer_menu li a{
+    color: white;
+}
+.footer_top{
+    width: 10%;
+    float: right;;
+    font-size: 20px;
+    margin-top: 1.5%;
+}
+.footer_top a{
+    color: white;
+}
+.footer_main{
+    width: 100%;
+}
+.footer_logo{
+    width: 19%;
+    float: left;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.footer_copy{
+    width: 79%;
+    float: right;
+    margin-top: 4%;
+}
+.footer_copy p{
+    color: gray;
+    margin-bottom: 0.5%;
+}
+.copy{
+    width: 100%;
+    float: left;
+    margin-bottom: 0.5%;
+}
+.copy li{
+    float: left;
+    color: gray;
+    margin-right: 2%;
+}
+.copy li:nth-child(2){
+    color: white;
+}
+/*푸터*/
