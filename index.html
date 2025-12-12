@@ -1,205 +1,180 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 포트폴리오 | My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
-    <style>
-        /* 커스텀 스타일 */
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            padding-top: 56px; /* 네비게이션 바 높이만큼 여백 */
-        }
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?office,desk');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .section-padding {
-            padding: 80px 0;
-        }
-        .profile-img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #f8f9fa;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .card {
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-        }
-        /* (선택사항) 데스크탑에서 마우스 올렸을 때 드롭다운 열리게 하기 */
-        @media (min-width: 992px) {
-            .dropdown:hover .dropdown-menu {
-                display: block;
-                margin-top: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            프로젝트 (Click)
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#web-projects">웹 프로젝트</a></li>
-                            <li><a class="dropdown-item" href="#app-projects">앱 프로젝트</a></li>
-                            <li><hr class="dropdown-divider"></li> <li><a class="dropdown-item" href="#design-projects">디자인 작업물</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Hyeonseok's Portpolio</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="#" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+      <header>
+        <nav class="navigation">
+          <p class="logo"><a href="#">
+            HyeonSeok's<br>Portfolio
+          </a></p>
+          <nav class="menu desktop-menu">
+            <a href="#About-Me">About Me</a>
+            <a href="#Web-site">Web</a>
+            <a href="#Banner">Banner</a>
+            <a href="#Contact">Contact</a>
+          </nav>
+          <div class="hamburger-menu" onclick="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <div class="banner">
+        <h2 class="banner-name">HyeonSeok's Portfolio</h2>
+        <p class="banner-text">안녕하세요.저는 웹 퍼블리셔를 희망하는 한현석입니다.<br>저는 니즈를 파악하여 주제에 맞는 디자인을 하고, 어떠한 사용자에게든 편리하고 좋은 웹 페이지를 만듭니다.</p>
+      </div>
+      <div class="about" id="About-Me">
+        <div class="big_inner_box">
+          <h2 class="name">About Me</h2>
+        </div>
+        <div class="inner_box">
+          <div class="my">
+            <div class="my-image">
+            </div>
+            <div class="my-name">
+              <div class="name-text">
+                <h3 class="k-name">한현석</h3>
+                <p class="En-name">HAN HYEONSEOK</p>
+                <div class="clear"></div>
+              </div>
+              <h3 class="job">Web Publisher</h3>
+              <p class="self">저는 단순히 주어진 업무를 처리하는 것을 넘어, 새로운 기술 트랜드를 끊임없이 탐구하며 성장하는 것을 가장 큰 가치로 둡니다. 빠르게 변화하는 환경 속에서도 적응하고 발전하며, 팀과 회사에 긍정적인 시너지를 불어넣는 인재가 되겠습니다.</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="mine">
+            <div class="profile">
+              <h3 class="profile-name">Profile</h3>
+              <p class="profile-text">
+                이름 : 한현석<br>출생연도 : 2002.10.14<br>주소 : 부산광역시 부산진구<br>전공 : 시각디자인, 융합디자인
+              </p>
+            </div>
+            <div class="hobby">
+              <h3 class="hobby-name">Hobby</h3>
+              <ul class="hobby-menu">
+                <li class="OTT">#OTT</li>
+                <li class="webtoon">#웹툰감상</li>
+                <li class="game">#게임하기</li>
+                <li class="trip">#여행하기</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="program">
+            <img src="img/aftereffet.png" class="Ae">
+            <img src="img/photoshop.png" class="Ps">
+            <img src="img/html.png" class="html">
+            <img src="img/vscode.png" class="vs">
+            <img src="img/css.png" class="css">
+            <img src="img/figma.png" class="figma">
+            <img src="img/illustrator.png" class="Ai">
+          </div>
+        </div>
+      </div>
+      <div class="Web" id="Web-site">
+        <div class="big_inner_box">
+          <h2 class="name1">Web Work</h2>
+        </div>
+        <div class="inner_box">
+          <div class="web-work">
+            <div class="section1">
+              <div class="Aethos-box">
+                <div class="Aethos-name">
+                  <img src="img/Aethos.png" class="Aethos-logo">
+                  <div class="Aethos-text">
+                    <h3 class="Aethos-text1">Aethos</h3>
+                    <p class="Aethos-text2">Space Audio</p>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <ul class="textarea">
+                  <li class="area1"><a href="Aethos 기획/Aethos1.html" target="_parent">자세히 보기</a></li>
+                 <li class="area2"><a href="Aethos/Aethos.html" target="_parent">사이트 이동</a></li>
+               </ul>
+              </div>
+              <div class="timeless-box">
+                <div class="timeless-name">
+                  <img src="img/timeless.png" class="timeless-logo">
+                  <h3 class="timeless-text">TIMELESS</h3>
+                 <div class="clear"></div>
+                </div>
+                <ul class="textarea">
+                  <li class="area1"><a href="타임리스 기획/timeless1.html" target="_parent">자세히 보기</a></li>
+                  <li class="area2"><a href="타임리스/timeless.html" target="_parent">사이트 이동</a></li>
                 </ul>
+              </div>
+              <div class="clear"></div>
             </div>
-        </div>
-    </nav>
-
-    <header id="home" class="hero-section">
-        <div class="container">
-            <h1 class="display-3 fw-bold mb-4">안녕하세요, <br>개발자 홍길동입니다.</h1>
-            <p class="lead mb-5">웹 프론트엔드 개발 | 사용자 경험 중심의 디자인 | 문제 해결사</p>
-            <a href="#portfolio" class="btn btn-primary btn-lg px-5">내 작업물 보기</a>
-        </div>
-    </header>
-
-    <section id="about" class="section-padding bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 text-center mb-4 mb-md-0">
-                    <img src="https://dummyimage.com/300x300/ced4da/6c757d.jpg&text=Profile+Image" alt="프로필 사진" class="profile-img">
+            <div class="section2">
+              <div class="rpg-box">
+                <div class="rpg-name">
+                  <img src="img/rpg.png" class="rpg-logo">
+                  <div class="rpg-text">
+                    <h3 class="rpg-text1">아르카나</h3>
+                    <p class="rpg-text2">죄와 선의 경계</p>
+                  </div>
+                  <div class="clear"></div>
                 </div>
-                <div class="col-md-7">
-                    <h2 class="fw-bold mb-4">저를 소개합니다</h2>
-                    <p class="lead text-muted">"코드로 가치를 만드는 사람"</p>
-                    <p>
-                        안녕하세요! 끊임없이 배우고 성장하는 웹 개발자 홍길동입니다. 
-                        사용자에게 직관적이고 편리한 경험을 제공하는 웹사이트를 만드는 것을 목표로 하고 있습니다.
-                        새로운 기술에 대한 호기심이 많으며, 협업을 통해 더 나은 결과를 만드는 과정을 즐깁니다.
-                    </p>
-                    <hr class="my-4">
-                    <h5 class="fw-bold mb-3">🛠 기술 스택</h5>
-                    <div>
-                        <span class="badge bg-primary fs-6 me-1 mb-1">HTML5</span>
-                        <span class="badge bg-primary fs-6 me-1 mb-1">CSS3</span>
-                        <span class="badge bg-warning text-dark fs-6 me-1 mb-1">JavaScript</span>
-                        <span class="badge bg-info text-dark fs-6 me-1 mb-1">React</span>
-                        <span class="badge bg-success fs-6 me-1 mb-1">Node.js</span>
-                        <span class="badge bg-secondary fs-6 me-1 mb-1">Git</span>
-                    </div>
+                <ul class="textarea">
+                  <li class="area1"><a href="RPG사이트 기획/Arcana1.html" target="_parent">자세히 보기</a></li>
+                  <li class="area2"><a href="RPG사이트/Arcana.html" target="_parent">사이트 이동</a></li>
+                </ul>
+              </div>
+              <div class="play-verse-box">
+                <div class="play-verse-name">
+                  <img src="img/play-verse.png" class="play-verse-logo">
+                  <h3 class="play-verse-text">Play-Verse</h3>
+                  <div class="clear"></div>
                 </div>
+                <ul class="textarea">
+                  <li class="area1"><a href="게임사이트 기획/playverse1.html" target="_parent">자세히 보기</a></li>
+                  <li class="area2"><a href="게임사이트/playverse.html" target="_parent">사이트 이동</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section id="portfolio" class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">최근 프로젝트</h2>
-                <p class="text-muted">제가 직접 기획하고 개발한 프로젝트들입니다.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+1" class="card-img-top" alt="프로젝트1">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">쇼핑몰 웹사이트</h5>
-                            <p class="card-text">리액트를 활용한 반응형 쇼핑몰입니다. 장바구니 기능과 결제 모듈 연동을 구현했습니다.</p>
-                            <span class="badge bg-light text-dark border">React</span>
-                            <span class="badge bg-light text-dark border">Redux</span>
-                        </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+2" class="card-img-top" alt="프로젝트2">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">할 일 관리 앱 (To-Do)</h5>
-                            <p class="card-text">로컬 스토리지를 활용하여 데이터를 저장하는 깔끔한 디자인의 할 일 관리 애플리케이션입니다.</p>
-                            <span class="badge bg-light text-dark border">JavaScript</span>
-                            <span class="badge bg-light text-dark border">CSS</span>
-                        </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+3" class="card-img-top" alt="프로젝트3">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">날씨 정보 대시보드</h5>
-                            <p class="card-text">OpenWeather API를 연동하여 실시간 날씨 정보를 시각적으로 보여주는 대시보드입니다.</p>
-                            <span class="badge bg-light text-dark border">API</span>
-                            <span class="badge bg-light text-dark border">Chart.js</span>
-                        </div>
-                        <div class="card-footer bg-white border-top-0">
-                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="banner-design" id="Banner">
+        <div class="big_inner_box">
+          <h2 class="name2">Banner Design</h2>
         </div>
-    </section>
-
-    <section id="contact" class="section-padding bg-dark text-white">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-4">함께 일해보고 싶으신가요?</h2>
-            <p class="lead mb-5">언제든 편하게 연락주세요. 새로운 기회를 기다리고 있습니다.</p>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="d-flex justify-content-center gap-4 mb-5">
-                        <a href="mailto:email@example.com" class="text-white text-decoration-none fs-5">
-                            <i class="bi bi-envelope-fill me-2"></i> email@example.com
-                        </a>
-                        <a href="#" class="text-white text-decoration-none fs-5">
-                            <i class="bi bi-github me-2"></i> GitHub
-                        </a>
-                        <a href="#" class="text-white text-decoration-none fs-5">
-                            <i class="bi bi-linkedin me-2"></i> LinkedIn
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="pt-4 border-top border-secondary">
-                <p class="text-muted small">&copy; 2024 Hong Gil Dong. All rights reserved.</p>
-            </footer>
+        <div class="inner_box">
+          <div class="banner-section1">
+            <img src="img/aethos-banner.jpg" class="banner1">
+            <img src="img/timeless-banner.jpg" class="banner2">
+            <div class="clear"></div>
+          </div>
+          <div class="banner-section2">
+            <img src="img/rpg-banner.jpg" class="banner3">
+            <img src="img/timeless-banner-2.jpg" class="banner4">
+            <div class="clear"></div>
+          </div>
         </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      </div>
+      <div class="contact" id="Contact">
+        <div class="inner_box">
+          <h2 class="contact-text1">함께 일할 웹 퍼블리셔를 찾고 계신가요?</h2>
+          <h1 class="contact-text2">hyeonseok2002@naver.com</h1>
+          <p class="contact-text3">저에게 궁금한 점이 있으시다면 연락해 주세요.</p>
+        </div>
+      </div>
+      <nav id="mobile-sidebar" class="mobile-sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <ul class="mobile-menu-items">
+          <li><a href="#About-Me" onclick="closeNav()">About Me</a></li>
+          <li><a href="#Web-site" onclick="closeNav()">Web</a></li>
+          <li><a href="#Banner" onclick="closeNav()">Banner</a></li>
+          <li><a href="#Contact" onclick="closeNav()">Contact</a></li>
+        </ul>
+      </nav>
+      <script src="js/main.js"></script>
+    </body>
 </html>
