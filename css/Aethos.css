@@ -1,0 +1,416 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR','맑은 고딕', sans-serif; color: #333; box-sizing: border-box;}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*공통*/
+.big_inner_box{
+    margin: 0 auto;
+    width: 1500px;
+}
+.inner_box{
+    margin: 0 auto;
+    width: 1000px;;
+    margin-top: 20px;
+}
+.clear{
+    clear: both;
+}
+.name{
+    width: 100%;
+}
+.name h1{
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+/*공통 끝*/
+
+/*헤더*/
+.Top{
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 1%;
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+}
+.menu{
+    width: 55%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login{
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.login a{
+    margin-right: 5%;
+}
+/*헤더 끝*/
+
+/*메인*/
+.main img{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    position: relative;
+}
+.main_txt{
+    width: 60%;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+.main_txt h2{
+    font-size: 40px;
+}
+.main_txt p{
+    font-size: 20px;;
+}
+/*메인 끝*/
+
+/*컬렉션*/
+.collection{
+    width: 100%;
+    margin-top: 4%;
+}
+.collection_1{
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+}
+.collection_1:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+
+}
+.collection_2{
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+}
+.collection_2:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.collection_3{
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+}
+.collection_3:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.collection_4{
+    width: 23%;
+    float: right;
+}
+.collection_4:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+/*컬렉션 끝*/
+
+/*서브*/
+.sub img{
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.sub{
+    position: relative;
+}
+.sub_logo img{
+    width: 30%;
+}
+.sub_logo{
+    width: 30%;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.sub_logo_txt{
+    width: 30%;
+    position: absolute;
+    top: 410px;
+    text-align: center;
+}
+.sub_logo_txt h3{
+    font-size: 50px;
+}
+.sub_logo_txt p{
+    font-size: 20px;
+}
+.sub_txt{
+    width: 50%;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+.sub_txt h2{
+    font-size: 45px;
+}
+.sub_txt p{
+    font-size: 20px;
+}
+.sub_txt1{
+    width: 6%;
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    border-radius: 50px;
+}
+.sub_txt1:hover{
+    background-color: #333;
+}
+.sub_txt1 p:hover{
+    color: white;
+}
+/*서브 끝*/
+
+/*뉴*/
+.New{
+    width: 100%;
+    margin-top: 4%;
+}
+.New .big_inner_box{
+    position: relative;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.New-item{
+    min-width: 25%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.New-item:hover{
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+.New-item img{
+    width: 100%;
+    display: block;
+}
+
+.prev-btn, .next-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 10px -30px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 25px;
+    line-height: 1;
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.prev-btn:hover, .next-btn:hover{
+    opacity: 1;
+}
+.prev-btn{
+    left: 20px;
+}
+.next-btn{
+    right: 20px;
+}
+/*뉴 끝*/
+
+/*베스트*/
+.best_1{
+    width: 100%;
+    margin-top: 4%;
+}
+.best1{
+    width: 100%;
+}
+.product1{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.product1_txt{
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin-top: 3%;
+}
+.txt1{
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+.product1_txt p{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.best_txt1{
+    width: 17%;
+    border: 1px solid;
+    border-radius: 50px;
+    text-align: center;
+    margin-left:43%;
+}
+.best_txt1:hover{
+    background-color: #333;
+}
+.best_txt1 p:hover{
+    color: white;
+}
+.best_2{
+    width: 100%;
+    margin-top: 4%;
+}
+.product2_txt{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 3%;
+}
+.txt2{
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+.product2_txt p{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.best_txt2{
+    width: 17%;
+    border: 1px solid;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 41%;
+}
+.best_txt2:hover{
+    background-color: #333;
+}
+.best_txt2 p:hover{
+    color: white;
+}
+.product2{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+/*베스트 끝*/
+
+/*푸터*/
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+.footer_nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid gray;
+}
+.footer_menu{
+    width: 74%;
+    float: left;
+    margin-top: 1.5%;
+}
+.footer_menu li{
+    float: left;
+    text-align: center;
+    margin-right: 6%;
+}
+.footer_menu:first-child{
+    margin-left: 10%;
+}
+.footer_menu li a{
+    color: white;
+}
+.footer_top{
+    width: 10%;
+    float: right;;
+    font-size: 20px;
+    margin-top: 1.5%;
+}
+.footer_top a{
+    color: white;
+}
+.footer_main{
+    width: 100%;
+    height: 270px;
+}
+.footer_logo{
+    width: 19%;
+    float: left;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.footer_copy{
+    width: 79%;
+    float: right;
+    margin-top: 4%;
+}
+.footer_copy p{
+    color: gray;
+    margin-bottom: 0.5%;
+}
+.copy{
+    width: 100%;
+    float: left;
+    margin-bottom: 0.5%;
+}
+.copy li{
+    float: left;
+    color: gray;
+    margin-right: 2%;
+}
+.copy li:nth-child(2){
+    color: white;
+}
+.portfolio{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    padding-bottom: 3%;
+}
+.portfolio-site{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.portfolio-site a{
+    color: white;
+}
+.portfolio-site a:hover{
+    color: #00AAFF;
+}
+/*푸터*/
