@@ -1,0 +1,713 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR','맑은 고딕', sans-serif; color: #333; box-sizing: border-box;}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*공통*/
+.big_inner_box{
+    margin: 0 auto;
+    width: 1500px;
+}
+.inner_box{
+    margin: 0 auto;
+    width: 1300px;;
+    margin-top: 20px;
+}
+.clear{
+    clear: both;
+}
+.name{
+    width: 100%;
+}
+.name h1{
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+/*공통 끝*/
+
+/*헤더 영역*/
+.navigation{
+    width: 100%;
+    height: 70px;
+    justify-content: left;
+    align-items: center;
+    padding-top: 5px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+.logo{
+    width: 10%;
+    height: 100%;
+}
+.menu{
+    width: 90%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50%;
+    display: flex;
+}
+.menu a:hover{
+    color: #00AAFF;
+}
+
+.hamburger-menu{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1002;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hamburger-menu span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    right: -250px;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: right 0.5s ease;
+    padding-top: 60px;
+    box-shadow: -2px 0.5px rgba(0,0,0,0.5);
+}
+.mobile-sidebar a.close-btn{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+}
+.mobile-sidebar .mobile-menu-items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.mobile-sidebar .mobile-menu-items li{
+    padding: 8px 8px 8px 32px;
+    font-size: 20px;
+    display: block;
+}
+.mobile-sidebar .mobile-menu-items li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+.mobile-sidebar .mobile-menu-items li a:hover{
+    color: #00AAFF;
+}
+/*헤더 끝*/
+
+/*메인 베너*/
+.banner{
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(to top left, white, #00AAFF);
+    border-radius: 60px;
+    position: relative;
+    margin-bottom: 5%;
+}
+.banner-name{
+    position: absolute;
+    top: 320px;
+    left: 630px;
+    font-size: 60px;
+}
+.banner-text{
+    position: absolute;
+    text-align: center;
+    top: 450px;
+    left: 510px;
+    font-size: 20px;
+}
+/*메인 베너 끝*/
+
+/*about me*/
+.about{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.name{
+    width: 8%;
+    border-bottom: 1px solid;
+    margin-bottom: 3%;
+    padding-bottom: 6px;
+    border-color: #00AAFF;
+    border-width: 4px;
+}
+.my{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 3%;
+}
+.my-image{
+    float: left;
+    width: 18%;
+    height: 300px;
+    background-color: gainsboro;
+    border-radius: 60px;
+}
+.my-name{
+    float: left;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.name-text{
+    width: 100%;
+}
+.k-name{
+    float: left;
+    width: 20%;
+    font-size: 23px;
+    text-align: center;
+}
+.En-name{
+    float: left;
+    width: 80%;
+    margin-top: 2.8%;
+    color: #00AAFF;
+}
+.job{
+    width: 100%;
+    height: 30px;
+    padding-left: 7px;
+    margin-top: 3%;
+    color: #00AAFF;
+    margin-bottom: 1%;
+}
+.self{
+    width: 100%;
+    margin-left: 2%;
+}
+.mine{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.profile{
+    width: 40%;
+    float: left;
+}
+.profile-name{
+    width: 100%;
+    color: #00AAFF;
+    margin-bottom: 2%;
+}
+.profile-text{
+    width: 100%;
+    font-size: 18px;
+}
+.hobby{
+    width: 60%;
+    float: right;
+}
+.hobby-name{
+    width: 100%;
+    color: #00AAFF;
+    margin-bottom: 2%;
+}
+.hobby-menu{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.OTT{
+    width: 100px;
+    height: 40px;
+    background-color: #FF4B4B;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.webtoon{
+    width: 100px;
+    height: 40px;
+    background-color: #814BFF;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.game{
+    width: 100px;
+    height: 40px;
+    background-color: #575757;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.trip{
+    width: 100px;
+    height: 40px;
+    background-color: #03C510;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+.program{
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+/*about me 끝*/
+
+/*웹 작업물*/
+.Web{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 5%;
+}
+.name1{
+    width: 8.5%;
+    border-bottom: 1px solid;
+    margin-bottom: 3%;
+    padding-bottom: 6px;
+    border-color: #00AAFF;
+    border-width: 4px;
+}
+.web-work{
+    width: 100%;
+}
+.section1{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.Aethos-box{
+    width: 48%;
+    height: 325px;
+    float: left;
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: lightgray;
+    padding: 10px 20px;
+    margin-right: 2%;
+}
+.timeless-box{
+    width: 48%;
+    height: 325px;
+    float: right;
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: lightgray;
+    padding: 10px 20px;
+    margin-left: 2%;
+}
+.Aethos-name{
+    width: 100%;
+    margin-bottom: 8%;
+}
+.Aethos-logo{
+    width: 30%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.Aethos-text{
+    width: 60%;
+    float: right;
+    padding-top: 25px;
+}
+.Aethos-text1{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 7%;
+}
+.Aethos-text2{
+    font-size: 35px;
+    text-align: center;
+}
+.textarea{
+    width: 100%;
+    height: 20px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.area1{
+    width: 33%;
+    font-size: 22px;
+    text-align: center;
+    height: 44px;
+    padding-top: 4px;
+}
+.area1:hover{
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: lightgray;
+}
+.area1 a:hover{
+    color: #00AAFF;
+}
+.area2{
+    width: 33%;
+    font-size: 22px;
+    height: 44px;
+    padding-top: 4px;
+    text-align: center;
+}
+.area2:hover{
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: lightgray;
+}
+.area2 a:hover{
+    color: #00AAFF;
+}
+.timeless-name{
+    width: 100%;
+    margin-bottom: 8%;
+}
+.timeless-logo{
+    width: 30%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.timeless-text{
+    width: 60%;
+    float: right;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 15%;
+    font-family: serif ;
+}
+.section2{
+    width: 100%;
+}
+.rpg-box{
+    width: 48%;
+    height: 325px;
+    float: left;
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: lightgray;
+    padding: 10px 20px;
+    margin-right: 2%;
+}
+.rpg-name{
+    width: 100%;
+    margin-bottom: 8%;
+}
+.rpg-logo{
+    width: 30%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.rpg-text{
+    width: 60%;
+    float: right;
+    padding-top: 40px;
+}
+.rpg-text1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 7%;
+}
+.rpg-text2{
+    font-size: 30px;
+    text-align: center;
+}
+.play-verse-box{
+    width: 48%;
+    height: 325px;
+    float: right;
+    border: 1px solid;
+    border-radius: 50px;
+    border-color: lightgray;
+    padding: 10px 20px;
+    margin-left: 2%;
+}
+.play-verse-name{
+    width: 100%;
+    margin-bottom: 8%;
+}
+.play-verse-logo{
+    width: 32%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+.play-verse-text{
+    width: 60%;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15%;
+}
+/*웹 작업물 끝*/
+
+/*베너 디자인*/
+.name2{
+    width: 13%;
+    border-bottom: 1px solid;
+    margin-bottom: 3%;
+    padding-bottom: 6px;
+    border-color: #00AAFF;
+    border-width: 4px;
+}
+.banner-design{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.banner-section1{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 4%;
+}
+.banner-section2{
+    width: 100%;
+    height: 200px;
+}
+.banner1{
+    float: left;
+    width: 48%;
+    height: 200px;
+    margin-right: 2%;
+    background-color: gainsboro;
+}
+.banner2{
+    float: right;
+    width: 48%;
+    height: 200px;
+    margin-left: 2%;
+    background-color: gainsboro;
+}
+.banner3{
+    float: left;
+    width: 48%;
+    height: 200px;
+    margin-right: 2%;
+    background-color: gainsboro;
+}
+.banner4{
+    float: right;
+    width: 48%;
+    height: 200px;
+    margin-left: 2%;
+    background-color: gainsboro;
+}
+/*베너 디자인 끝*/
+
+/*contact*/
+.contact{
+    width: 100%;
+    height: 450px;
+    padding-top: 90px;
+    background-image: linear-gradient(to bottom right, #FFFFFF, #00AAFF);
+}
+.contact-text1{
+    width: 100%;
+    font-size: 40px;
+    color: gray;
+    margin-bottom: 2%;
+}
+.contact-text2{
+    width: 100%;
+    font-size: 60px;
+    margin-bottom: 1%;
+}
+.contact-text3{
+    width: 100%;
+    font-size: 40px;
+    color: gray;
+}
+/*contact 끝*/
+
+
+@media(max-width: 768px){
+    .navigation .menu.desktop-menu{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    .navigation{
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+    .logo{
+        width: auto;
+    }
+
+    .banner-name{
+        font-size: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 350px;
+        width: 90%;
+        text-align: center;
+    }
+    .banner-text{
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 490px;
+        width: 90%;
+    }
+
+    .big_inner_box{
+        width: 95%;
+    }
+    .inner_box{
+        width: 90%;
+    }
+
+    .name{
+        width: 20%;
+        margin-left: 5%;
+    }
+    .my{
+        height: auto;
+        flex-direction: column;
+    }
+    .my-image, .my-name, .profile, .hobby{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .k-name, .En-name{
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    .job{
+        padding-left: 0;
+        text-align: left;
+    }
+    .self{
+        margin-left: 0;
+    }
+    .hobby-menu{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .hobby-menu li{
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .program{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .program img{
+        width: 12%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .Web{
+        height: auto;
+    }
+    .name1{
+        width: 25%;
+        margin-left: 5%;
+    }
+    .Aethos-box, .rpg-box{
+        float: none;
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .timeless-box, .play-verse-box{
+        float: none;
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .timeless-name, .play-verse-name{
+        padding-bottom: 7%;
+    }
+    .timeless-logo, .play-verse-logo{
+        width: 20%;
+        margin-left: 5%;
+    }
+    .Aethos-logo, .rpg-logo{
+        width: 20%;
+        margin-left: 5%;
+        padding-top: 4%;
+    }
+    .Aethos-text, .timeless-text, .rpg-text, .play-verse-text{
+        width: 70%;
+        padding-top: 0;
+        margin-top: 10px;
+    }
+    .area1, .area2{
+        width: 45%;
+        font-size: 18px;
+    }
+
+    .name{
+        width: 35%;
+        margin-left: 5%;
+    }
+    .banner-section1, .banner-section2{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .banner1, .banner2, .banner3, .banner4{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        height: 150px;
+    }
+
+    .contact{
+        height: auto;
+        padding: 50px 0;
+    }
+    .contact-text1, .contact-text3{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .contact-text2{
+        font-size: 25px;
+        width: 100%;
+    }
+}
